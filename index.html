@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f3ec">
+  <title>Dijital Adım – e-Devlet’ten trafik cezası sorgulama</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-view="card" data-state="todo">
+
+<section class="welcome-overlay" id="welcomeScreen" aria-labelledby="welcomeTitle">
+  <div class="welcome-card">
+    <div class="welcome-kicker">DİJİTAL ADIM · ETKİLEŞİMLİ ÖĞRENME</div>
+    <h1 id="welcomeTitle">Trafik cezası sorgulamayı öğrenelim</h1>
+    <p class="welcome-intro">Bu eğitimde e-Devlet'te trafik cezası sorgulama sürecini güvenli bir deneme ekranında adım adım öğreneceksiniz.</p>
+    <h2>Eğitim 5 aşamadan oluşuyor</h2>
+    <ol class="welcome-stages">
+      <li><span>1</span><div><b>Hazırlık</b><small>e-Devlet uygulamasını tanıma</small></div></li>
+      <li><span>2</span><div><b>Giriş</b><small>Örnek bilgilerle giriş adımlarını öğrenme</small></div></li>
+      <li><span>3</span><div><b>Hizmeti bulma</b><small>Arama alanını kullanma ve doğru hizmeti seçme</small></div></li>
+      <li><span>4</span><div><b>Hizmeti inceleme</b><small>Açıklama ve sorgulama sonucunu okuma</small></div></li>
+      <li><span>5</span><div><b>Güvenli çıkış</b><small>İşlem sonunda hesaptan çıkış yapma</small></div></li>
+    </ol>
+    <div class="welcome-warning"><b>Güvenlik notu:</b> Bu bir eğitim simülasyonudur. Gerçek e-Devlet hesabına bağlanmaz; gerçek T.C. kimlik numarası veya şifre girmeyin.</div>
+    <button class="welcome-start" id="startTraining" type="button">Eğitime başla <span aria-hidden="true">→</span></button>
+  </div>
+</section>
+
+<header>
+  <div class="logo">📖 Dijital Adım<small>Birlikte öğreniyoruz</small></div>
+  <div class="hbtn">
+    <button class="pill" id="restart" type="button">↻ Baştan<span class="wide"> başla</span></button>
+    <button class="pill" id="help" type="button">? Yardım</button>
+    <button class="pill" id="sesToggle" type="button" aria-pressed="true"></button>
+  </div>
+</header>
+
+<main>
+  <div class="top"><h1>e-Devlet’ten trafik cezası sorgulama</h1><b id="stg"></b></div>
+  <div class="steps" id="steps"></div>
+  <div class="grid">
+
+    <!-- 1) Talimat kartı: ne yapacağımızı anlatır -->
+    <section class="card" id="card">
+      <div class="lab">
+        <span>ŞİMDİ NE YAPACAĞIZ?</span>
+        <div class="audio-controls">
+          <button class="pill" id="listen" type="button" title="Bu adımın anlatımını dinle">▶ Dinle</button>
+          <button class="pill" id="pauseAudio" type="button" title="Sesli anlatımı duraklat veya devam ettir" disabled>⏸ Dur</button>
+          <button class="pill" id="stopAudio" type="button" title="Sesli anlatımı durdur" disabled>■ Durdur</button>
+        </div>
+      </div>
+      <h2 id="ti"></h2>
+      <div class="pre"><div id="tx"></div><div class="ex" id="ex"></div><div class="call" id="hi"></div></div>
+      <div id="fb" role="status" aria-live="polite"></div>
+      <div class="post"><div class="xt" id="xt"></div></div>
+      <button class="go" id="goPhone" type="button">Telefon ekranına geç <span aria-hidden="true">→</span></button>
+    </section>
+
+    <!-- 2) Telefon: deneme alanı -->
+    <section class="zone">
+      <b class="zt">📱 Eğitim amaçlı deneme alanı</b>
+      <div class="hintbar" id="hintbar"><span id="hintTx"></span><button class="pill" id="toCard" type="button" aria-label="Talimata dön">←<span class="wide"> Talimat</span></button></div>
+      <div class="phone" id="ph"><div class="dm">DENEME • Gerçek giriş yapılmaz</div><div class="exbar" id="exbar"></div><div class="scr" id="scr"></div><div id="ov"></div><div id="hl"></div></div>
+      <p>Acele etmeyin. Bu alanda güvenle deneme yapabilirsiniz.</p>
+    </section>
+
+  </div>
+</main>
+
+<div class="bar foot"><button class="pill pr" id="prev" type="button">← Önceki<span class="wide"> adım</span></button><div class="mid"><b>Hazır olduğunuzda devam edin.</b><small id="nxt"></small></div><button class="nx" id="next" type="button">Sonraki adım →</button></div>
+<dialog id="dlg"><div id="dm"></div><menu><button class="nx" id="dok" type="button">Tamam, tekrar deneyeyim</button><button class="pill" id="dshow" type="button">Bana yerini göster</button></menu></dialog>
+
+<script src="js/assets.js" defer></script>
+<script src="js/data.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>

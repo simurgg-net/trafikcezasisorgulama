@@ -1,0 +1,216 @@
+
+:root{--bg:#f4f3ec;--card:#fff;--ink:#1b2b3a;--mut:#4a5a68;--g:#0b7a6b;--gl:#e1f1ec;--line:#d9d8cf;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10181f;--card:#18242e;--ink:#f1f4f6;--mut:#b8c4cd;--g:#4cd1bb;--gl:#16352f;--line:#33434f}}
+*{box-sizing:inherit}html,body{margin:0}body{background:var(--bg);color:var(--ink);font:24px/1.5 "Inter",system-ui,sans-serif}
+button{font:inherit;color:inherit;cursor:pointer}
+header,.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 24px;background:var(--card);border-bottom:1px solid var(--line)}
+.logo{font-weight:700}.logo small{font-weight:400;color:var(--mut);font-size:20px;margin-left:8px}
+.pill{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:8px 16px;font-size:20px}
+main{max-width:1200px;margin:0 auto;padding:20px}
+.top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap}.top h1{font-size:30px;margin:0}.top b{color:var(--g)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:14px 0 20px}.steps div{border-top:6px solid var(--line);padding-top:6px;font-size:20px;color:var(--mut)}
+.steps .on{border-color:var(--g);color:var(--ink);font-weight:700}.steps .ok{border-color:var(--g)}
+.grid{display:grid}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.lab{display:flex;justify-content:space-between;align-items:center;font-size:20px;font-weight:700;color:var(--g)}
+.note{background:var(--bg);border-radius:8px;padding:8px 12px;font-size:20px;color:var(--mut);margin:12px 0}
+h2{font-size:34px;margin:12px 0 6px}.call{background:var(--gl);color:var(--g);font-weight:700;border-radius:12px;padding:16px;margin:16px 0}
+.good{background:var(--g);color:#fff;border-radius:12px;padding:16px;font-weight:700}
+.zone{background:var(--gl);border-radius:18px;padding:16px;text-align:center}.zone p{font-size:20px;color:var(--mut);margin:10px 0 0}
+.phone{margin:10px auto;max-width:400px;border:8px solid #000;outline:2px solid #3a4049;border-radius:36px;background:#000;overflow:hidden;text-align:left}
+.dm{background:#12372f;color:#7fe0c9;font-size:16px;font-weight:700;padding:6px 14px}
+.scr{overflow:hidden;font-size:19px;background:#111317;color:#fff}.pad{padding:14px}
+.t{display:block;position:relative;width:100%;text-align:left;border:2px solid #3a4049;background:#262b33;color:#fff;border-radius:12px;padding:14px;margin:10px 0;font-size:18px;min-height:56px}
+.btn{background:#2f7de1;border-color:#2f7de1;text-align:center;font-weight:700}.lnk{background:none;border:0;color:#4da3ff;text-align:center}.sm{display:inline-block;width:auto;margin:0}
+.ph{color:#9aa4ae}.lg2{text-align:center;font-weight:800;font-size:24px;padding:12px}
+.q{display:flex;gap:8px}.qk{text-align:center;font-size:14px;padding:8px;min-height:80px;margin:6px 0}
+.res{display:flex;gap:14px;align-items:center;background:none;border:0;border-bottom:1px solid #3a4049;border-radius:0;margin:0;padding:12px 4px}
+.lg{width:52px;height:52px;border-radius:10px;background:#262b33;display:grid;place-items:center;font-size:28px;flex:none}.res small{color:#7aa7ff}
+.tabs{margin-top:auto;display:flex;background:#25282d;border-top:1px solid #3a4049}
+.tabs .t{flex:1;margin:0;border:0;border-radius:0;background:none;text-align:center;font-size:14px;padding:8px 2px;min-height:60px}.tabs .t.on{color:#4da3ff}
+.ap{background:none;border:0;text-align:center;font-size:15px;padding:6px;margin:0;min-height:0}.ico{display:grid;place-items:center;width:62px;height:62px;border-radius:16px;font-size:32px;margin:0 auto 4px}
+.hint{outline:5px solid #f2a900;animation:p 1s infinite}@keyframes p{50%{outline-color:transparent}}
+.arw{position:absolute;top:-24px;right:10px;background:#f2a900;color:#1b2b3a;font-weight:700;font-size:18px;border-radius:999px;padding:2px 14px;animation:bn .8s infinite;pointer-events:none;z-index:2;white-space:nowrap;box-shadow:0 2px 6px #0004}@keyframes bn{50%{transform:translateY(-7px)}}
+.foot{position:sticky;bottom:0;display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line);border-bottom:0;padding-bottom:calc(14px + env(safe-area-inset-bottom,0px))}
+.nx{background:var(--g);color:#fff;border:0;border-radius:10px;padding:14px 24px;font-weight:700}.nx[disabled]{opacity:.45;cursor:not-allowed}.pr{padding:14px 20px}
+.mid{text-align:center;font-size:20px}.mid small{display:block;color:var(--mut);font-size:18px}
+dialog{border:0;border-radius:18px;max-width:520px;padding:24px;background:var(--card);color:var(--ink);font-size:24px}dialog::backdrop{background:#0008}
+dialog menu{display:flex;gap:10px;flex-wrap:wrap;padding:0;margin:16px 0 0}
+.i{width:26px;height:26px;display:block;margin:0 auto 2px}.rw{display:flex;align-items:center;gap:12px}.rw .i{margin:0;flex:none}.hr{border:0;border-top:1px solid #3a4049;margin:10px 0}
+.qk{background:none;border:0;text-align:center;font-size:13px;padding:4px;min-height:0;margin:6px 0;flex:1}.qk img{display:block;margin:0 auto 4px}.ap img{display:block;margin:0 auto 4px}.ap{color:#fff}
+.sb{background:#262b33;border-color:#262b33}.res b{font-size:17px}.res small{color:#8fa6c4;font-size:15px}.btn{background:linear-gradient(#2f8cf0,#1f6fd0)}.t small{font-size:15px}
+.pad{padding:14px}.phone{position:relative}.i{flex:none}
+.soft{animation:sg 2.4s ease-in-out infinite}@keyframes sg{50%{box-shadow:0 0 0 6px #f2a90066,0 0 16px #f2a900aa}}
+.won{outline:4px solid #2fa36b;outline-offset:2px}.won::after{content:"✓";position:absolute;top:-12px;right:-8px;width:30px;height:30px;border-radius:50%;background:#2fa36b;color:#fff;display:grid;place-items:center;font:700 18px/1 system-ui;z-index:3}
+#hl{position:absolute;z-index:9;display:none;background:#f2a900;color:#1b2b3a;font:700 18px/1 system-ui;padding:8px 14px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px #0006;animation:bn .8s infinite;pointer-events:none}
+#hl::after{content:"";position:absolute;left:var(--ax,50%);margin-left:-9px;border:9px solid transparent}#hl.up::after{top:100%;border-top-color:#f2a900}#hl.dn::after{bottom:100%;border-bottom-color:#f2a900}
+@keyframes bn{50%{transform:translateY(-5px)}}
+#ov{position:absolute;left:0;right:0;top:30px;bottom:0;display:none;z-index:5}.dim{position:absolute;inset:0;background:#000b}.dlgb{position:absolute;left:10px;right:10px;top:40%;background:#424242;border-radius:6px;padding:20px 16px 10px;color:#fff;font-size:18px}.dlgb p{margin:0 0 18px}.dlgb .lnk{color:#4da3ff;margin-left:10px;padding:8px}
+.fld input{width:100%;background:none;border:0;outline:0;color:#fff;font:inherit;padding:0;min-width:0}.fld input::placeholder{color:#9aa4ae}.sb{display:block}
+.card2{background:#262b33;border-radius:12px;padding:14px;margin:8px 0}.kv{display:flex;justify-content:space-between;gap:8px;border-bottom:1px solid #3a4049;padding:8px 0;font-size:16px}.gr{color:#1fb35a;font-weight:700;font-size:16px;margin:8px 0}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}.tile{margin:0;min-height:150px;display:flex;flex-direction:column;gap:14px;padding:16px}.tile img{display:block}
+.ex{background:#fff2c2;color:#3b2f00;border:2px dashed #e0a800;border-radius:12px;padding:10px 16px;font-size:26px;margin:12px 0}.ex b{font-size:32px;letter-spacing:1px}
+.xt{border-left:6px solid var(--g);background:var(--bg);padding:12px 16px;border-radius:8px;margin:14px 0;font-size:22px}
+.good{display:flex;gap:14px;align-items:center}.pop{width:52px;height:52px;flex:none;animation:pp .5s}@keyframes pp{0%{transform:scale(0)}70%{transform:scale(1.25)}100%{transform:scale(1)}}
+.warnb{background:#fff2c2;color:#3b2f00;border-radius:12px;padding:12px 16px;font-size:22px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ex,:root:not([data-theme="light"]) .warnb{background:#3a3118;color:#ffe9a3}}
+
+
+/* ======================================================================
+   DİJİTAL ADIM – YERLEŞİM (kaydırmasız, 65+ yaş için)
+   Kural: Sayfa hiçbir ekranda kaydırma istemez. Sığmayan içerik kaydırılmaz;
+   metin küçültülür (en fazla 19 px'e) ve telefon ekranı ölçeklenir.
+   Dar ekranda (<=860px) içerik "Talimat" ve "Telefon" olmak üzere sırayla gösterilir.
+   ====================================================================== */
+:root{color-scheme:light dark}
+html,body{height:100%}
+body{height:100dvh;display:flex;flex-direction:column;overflow:hidden;font-size:24px;line-height:1.4}
+button:focus-visible,input:focus-visible{outline:3px solid #f2a900;outline-offset:3px}
+header{flex:none;min-height:64px;padding:8px 20px}
+.logo{font-size:24px}.hbtn{display:flex;gap:8px}
+.pill{min-height:48px;font-size:20px;padding:8px 16px}
+main{flex:1;min-height:0;width:100%;max-width:1320px;margin:0 auto;padding:8px 20px;display:flex;flex-direction:column}
+.top{flex:none}.top h1{font-size:28px}.top b{font-size:24px}
+.steps{flex:none;margin:8px 0 10px}.steps div{font-size:20px}
+.grid{flex:1;min-height:0;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);grid-template-rows:minmax(0,1fr);gap:16px}
+
+/* Talimat kartı: yazılar --cfs değişkenine göre (JS) küçülür, kaydırma çıkmaz. */
+.card{min-height:0;overflow:hidden;display:flex;flex-direction:column;padding:16px 20px;font-size:var(--cfs,24px);line-height:1.4}
+.card.over{overflow-y:auto}
+.lab{font-size:.8em;gap:8px;flex-wrap:wrap}
+.audio-controls{display:flex;gap:8px;flex-wrap:wrap}
+.audio-controls .pill{font-size:20px;padding:6px 12px}
+h2{font-size:1.25em;margin:8px 0 4px;line-height:1.25}
+.pre{display:block}.post{display:none}
+body[data-state="done"] .pre{display:none}
+body[data-state="done"] .post{display:block}
+.card .ex,.card .call,.card .xt,.card .good,.card .warnb,.card .tip-live{font-size:1em;line-height:1.4;padding:10px 14px;margin:10px 0}
+.card .ex b{font-size:1.1em}
+.empty-results,.tip-live{border-radius:10px;background:var(--bg);color:var(--mut)}
+.good{display:flex;gap:14px;align-items:center}
+.go,.hintbar{display:none}
+
+/* Telefon alanı */
+.zone{min-height:0;display:flex;flex-direction:column;padding:10px 12px}
+.zt{flex:none;font-size:20px;color:var(--g)}
+.phone{flex:1;min-height:0;width:min(100%,400px);margin:6px auto;display:flex;flex-direction:column}
+.dm{flex:none}
+.exbar{flex:none;background:#fff2c2;color:#3b2f00;text-align:center;font-size:20px;line-height:1.25;padding:6px 8px;border-bottom:2px dashed #e0a800}
+.exbar:empty{display:none}.exbar b{font-size:1.2em;letter-spacing:1px}
+.scr{flex:1;min-height:0;position:relative;overflow:hidden}
+.scr.over{overflow-y:auto;scrollbar-width:none}.scr.over::-webkit-scrollbar{display:none}
+#scrIn{display:flex;flex-direction:column;width:100%}
+#scrIn.compact .opt{display:none}
+#scrIn.compact #searchResults .res:nth-child(n+5){display:none}
+#scrIn.compact .t{padding:10px;margin:6px 0;min-height:48px}
+#scrIn.compact img[style*="width:250px"]{width:170px !important}
+#scrIn.compact img[style*="width:150px"]{width:110px !important}
+#scrIn.compact .lg2{padding:4px}
+#scrIn.compact .res{padding:6px 4px}
+#scrIn.compact .res img{width:44px !important}
+#scrIn.compact h3{margin:2px 0 6px}
+#scrIn.compact2 #searchResults .res:nth-child(n+4){display:none}
+#scrIn.compact2 .opt,#scrIn.compact2 .opt2,#scrIn.compact2 .card2 p{display:none}
+.zone p{flex:none;font-size:20px;margin:4px 0 0}
+@media (max-height:820px){.zone p{display:none}}
+.foot{flex:none;padding:8px 20px}
+.foot .pill,.foot .nx{min-height:56px;font-size:22px}
+.mid{font-size:20px}.mid small{font-size:18px}
+dialog{max-width:min(560px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overflow:auto}
+dialog button{min-height:52px}
+@media (max-height:700px){.card{padding:10px 12px}.card .ex,.card .call,.card .xt,.card .good,.card .warnb{padding:8px 12px;margin:6px 0}h2{margin:4px 0 2px}}
+
+/* Kısa masaüstü/laptop ekranları (örn. 1280x720): üst ve alt şeritler incelir, telefon alanı büyür. */
+@media (min-width:861px) and (max-height:800px){
+  header{min-height:52px;padding:4px 20px}.logo{font-size:22px}
+  .pill{min-height:42px}
+  .top h1{font-size:24px}.top b{font-size:22px}
+  .steps{margin:4px 0 6px}.steps div{font-size:18px}
+  .zt{display:none}.zone{padding:8px}
+  .foot{padding:4px 20px}.foot .pill,.foot .nx{min-height:48px}
+}
+
+/* Tablet ve telefon: tek sütun, sırayla "Talimat" -> "Telefon" -> "Başarı" */
+@media (max-width:860px){
+  header{padding:6px 10px;min-height:56px}
+  .logo{font-size:19px;white-space:nowrap}.logo small{display:none}
+  .hbtn{gap:6px}#sesToggle{padding:6px 10px}
+  .pill{padding:6px 8px;font-size:18px;min-height:46px;white-space:nowrap}
+  .wide{display:none}
+  main{padding:6px 10px}
+  .top h1{display:none}.top b{font-size:22px}
+  .steps{margin:4px 0 8px;gap:6px}
+  .steps div{font-size:0;line-height:0;padding:0;border-top-width:8px}
+  .grid{display:block;position:relative}
+  .card,.zone{height:100%}
+  body[data-view="phone"] .card{display:none}
+  body:not([data-view="phone"]) .zone{display:none}
+  .card{padding:12px 14px}
+  .card .pre .call{display:none}
+  .go{display:block;margin-top:auto;width:100%;min-height:68px;border:0;border-radius:14px;background:var(--g);color:#fff;font-weight:800;font-size:24px}
+  body[data-state="done"] .go{display:none}
+  body[data-state="done"] #ti,.nexthint{display:none}
+  .zone{padding:6px}.zt{display:none}.zone p{display:none}
+  body[data-state="done"] .lab>span{display:none}
+  .hintbar{display:flex;flex:none;align-items:center;gap:8px;margin:2px 0 4px;text-align:left;font-size:21px;font-weight:700;line-height:1.25}
+  .hintbar span{flex:1}.hintbar .pill{flex:none}
+  .phone{width:100%;max-width:none;border-width:4px;border-radius:20px;margin:0}
+  .foot{padding:6px 10px calc(6px + env(safe-area-inset-bottom,0px));gap:8px}
+  .foot .mid{display:none}
+  .foot .pill,.foot .nx{flex:1;min-width:0;font-size:21px;min-height:60px;white-space:nowrap;padding:6px}
+  .nx[disabled]{visibility:hidden}
+  body[data-view="phone"] .foot{display:none}
+  dialog{font-size:20px;padding:14px;line-height:1.35}dialog button{font-size:20px;min-height:48px}
+  #dm br{display:block;content:"";margin-top:6px}
+  dialog menu{flex-direction:column;margin-top:10px}
+}
+@media (max-height:700px){dialog{font-size:19px}}
+@media (max-height:620px){dialog{font-size:17px;padding:10px}dialog button{min-height:44px;font-size:17px}}
+
+/* Çok dar telefonlarda üst şeritte yalnızca üç büyük düğme kalır. */
+@media (max-width:430px){.logo{display:none}.hbtn{width:100%}.hbtn .pill{flex:1;min-width:0}}
+
+/* Başarı ekranı (eğitim bitince tam ekran) */
+.completion-card{position:fixed;inset:0;z-index:20000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:clamp(20px,5vw,64px);background:#e8f5ef;color:#17352d;text-align:center;overflow-y:auto;animation:completeIn .45s ease-out both}
+.completion-icon{font-size:clamp(72px,12vw,120px);line-height:1;animation:popIn .55s ease-out both}
+.completion-card h3{margin:0;max-width:1000px;font-size:clamp(30px,5vw,52px);line-height:1.2;color:#075f50}
+.completion-card p{margin:0;max-width:850px;font-size:clamp(22px,2.6vw,30px);line-height:1.5}
+.completion-card .nx{min-width:240px;min-height:64px;padding:16px 28px;font-size:22px}
+@keyframes completeIn{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes popIn{0%{transform:scale(.2) rotate(-20deg)}75%{transform:scale(1.15) rotate(6deg)}100%{transform:none}}
+
+/* Açılış bilgilendirme ekranı: kısa ekranlarda ayrıntılar gizlenir, kaydırma gerekmez. */
+.welcome-overlay{position:fixed;inset:0;z-index:10000;overflow-y:auto;display:grid;place-items:center;padding:16px;background:rgba(15,24,38,.76);backdrop-filter:blur(8px)}
+.welcome-card{width:min(100%,680px);max-height:calc(100dvh - 32px);overflow-y:auto;padding:clamp(18px,3vw,32px);border-radius:22px;background:var(--card);color:var(--ink);box-shadow:0 24px 80px rgba(0,0,0,.28)}
+.welcome-kicker{font-size:14px;letter-spacing:.12em;font-weight:800;color:var(--g)}
+.welcome-card h1{margin:8px 0;font-size:clamp(26px,4vw,36px);line-height:1.15}
+.welcome-intro{margin:0 0 8px;line-height:1.5;color:var(--mut)}
+.welcome-card h2{margin:16px 0 10px;font-size:24px}
+.welcome-stages{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.welcome-stages li{display:flex;align-items:center;gap:12px;padding:8px 12px;border-radius:12px;background:var(--bg)}
+.welcome-stages li>span{width:36px;height:36px;flex:0 0 36px;display:grid;place-items:center;border-radius:50%;background:var(--g);color:#fff;font-weight:800}
+.welcome-stages b,.welcome-stages small{display:block}
+.welcome-stages b{font-size:24px;line-height:1.2}.welcome-stages small{font-size:20px;line-height:1.3;color:var(--mut)}
+.welcome-warning{margin:14px 0;padding:12px 14px;border-radius:12px;background:#fff3d4;color:#493813;line-height:1.4;font-size:20px}
+.welcome-start{width:100%;min-height:64px;border:0;border-radius:12px;background:var(--g);color:#fff;font-size:24px;font-weight:800}
+@media (max-height:860px){.welcome-intro,.welcome-stages small{display:none}}
+@media (max-height:700px){.welcome-overlay{padding:8px}.welcome-card{padding:14px;max-height:calc(100dvh - 16px)}.welcome-kicker{font-size:12px}.welcome-card h1{font-size:24px;margin:6px 0}.welcome-card h2{display:none}.welcome-stages{gap:6px;margin-top:8px}.welcome-stages li{padding:4px 8px}.welcome-stages li>span{width:28px;height:28px;flex-basis:28px}.welcome-stages b{font-size:19px}.welcome-warning{font-size:16px;line-height:1.3;padding:10px 12px;margin:10px 0}.welcome-start{min-height:56px;font-size:22px}}
+
+/* Telefon yatay tutulduğunda: nazik uyarı (yatayda ekran çok kısa kalıyor). */
+@media (orientation:landscape) and (max-height:480px){body::before{content:"Lütfen telefonu dik tutun.";position:fixed;inset:0;z-index:30000;display:grid;place-items:center;padding:24px;text-align:center;background:var(--card);color:var(--ink);font-size:28px;font-weight:700}}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;scroll-behavior:auto !important}}
+
+
+/* Yalnızca masaüstü: küçük kalan talimat ve arayüz metinlerini büyüt. */
+@media (min-width: 861px) {
+  body { font-size: 25px; }
+  .top h1 { font-size: 32px; }
+  .top b { font-size: 26px; }
+  .steps div { font-size: 21px; }
+  .lab { font-size: 21px; }
+  .note, .zone p, .zt { font-size: 21px; }
+  .audio-controls .pill, .pill { font-size: 21px; }
+  .foot .mid { font-size: 21px; }
+  .foot .mid small { font-size: 19px; }
+}
